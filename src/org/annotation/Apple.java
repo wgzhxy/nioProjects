@@ -1,6 +1,8 @@
 package org.annotation;
 
-import org.annotation.FruitColor.Color;
+import org.annotation.annotation.FruitColor;
+import org.annotation.annotation.FruitName;
+import org.annotation.annotation.FruitColor.Color;
 
 public class Apple {
 

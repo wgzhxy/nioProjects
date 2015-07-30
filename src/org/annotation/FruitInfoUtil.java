@@ -2,6 +2,10 @@ package org.annotation;
 
 import java.lang.reflect.Field;
 
+import org.annotation.annotation.FruitColor;
+import org.annotation.annotation.FruitName;
+import org.annotation.annotation.FruitProvider;
+
 /*********** ×¢½â´¦ÀíÆ÷ ***************/
 
 public class FruitInfoUtil {

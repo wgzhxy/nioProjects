@@ -1,4 +1,4 @@
-package org.annotation;
+package org.annotation.annotation;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
@@ -7,33 +7,31 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * 水果供应者注解
+ * 水果颜色注解
  * 
  * @author peida
  */
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-public @interface FruitProvider {
+public @interface FruitColor {
 
     /**
-     * 供应商编号
+     * 颜色枚举
+     * 
+     * @author peida
+     */
+    public enum Color {
+        BULE,
+        RED,
+        GREEN
+    };
+
+    /**
+     * 颜色属性
      * 
      * @return
      */
-    public int id() default -1;
+    Color fruitColor() default Color.GREEN;
 
-    /**
-     * 供应商名称
-     * 
-     * @return
-     */
-    public String name() default "";
-
-    /**
-     * 供应商地址
-     * 
-     * @return
-     */
-    public String address() default "";
 }
